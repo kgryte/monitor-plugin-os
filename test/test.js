@@ -38,10 +38,11 @@ describe( 'monitor-os-plugin', function tests() {
 		assert.strictEqual( plugin.length, 2 );
 	});
 
-	it( 'should append to the monitor object', function test() {
+	it( 'should append to the monitor object', function test( done ) {
 		plugin( monitor, next );
 		function next() {
 			expect( monitor.system ).to.be.an( 'object' );
+			done();
 		}
 	});
 
