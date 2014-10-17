@@ -24,7 +24,7 @@ The module exports the following method...
 
 #### plugin( obj, clbk )
 
-Appends system metrics to an `object` and then invokes the provided callback.
+Appends [system metrics](https://github.com/kgryte/node-metrics-os) to an `object` and then invokes the provided callback.
 
 ``` javascript
 plugin( {}, function next() {});
