@@ -54,7 +54,7 @@ $ node ./examples/index.js
 
 ## Notes
 
-Note that the plugin will append a `system` property to the provided `object`. If a `system` property already exists, the property `value` will be overwritten.
+The plugin will append a `system` property to the provided `object`. If a `system` property already exists, the property `value` will be overwritten.
 
 
 
