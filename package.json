@@ -33,7 +33,9 @@
     "performance",
     "plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "metrics-os": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "coveralls": "^2.11.1",

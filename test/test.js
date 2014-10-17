@@ -38,7 +38,7 @@ describe( 'monitor-os-plugin', function tests() {
 		assert.strictEqual( plugin.length, 2 );
 	});
 
-	it( 'should append the monitor object', function test() {
+	it( 'should append to the monitor object', function test() {
 		plugin( monitor, next );
 		function next() {
 			expect( monitor.system ).to.be.an( 'object' );

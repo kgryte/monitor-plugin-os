@@ -5,7 +5,6 @@ OS Metrics
 > Middleware plugin which collects OS metrics.
 
 
----
 ## Installation
 
 For use in Node.js,
