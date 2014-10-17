@@ -7,21 +7,54 @@ OS Metrics
 
 ## Installation
 
-For use in Node.js,
-
 ``` bash
 $ npm install monitor-plugin-os
 ```
 
 ## Usage
 
+To use the module,
+
+``` javascript
+var plugin = require( 'monitor-plugin-os' );
+```
+
+The module exports the following method...
 
 
+#### plugin( obj, clbk )
+
+Appends system metrics to an `object` and then invokes the provided callback.
+
+``` javascript
+plugin( {}, function next() {});
+```
+
+
+## Examples
+
+``` javascript
+var plugin = require( 'monitor-plugin-os' );
+
+// Initialize a monitor object:
+var monitor = {};
+
+// Run the plugin:
+plugin( monitor, function next() {
+	console.log( JSON.stringify( monitor ) );
+});
+```
+
+To run the example code from the top-level application directory,
+
+``` bash
+$ node ./examples/index.js
+```
 
 
 ## Notes
 
-
+Note that the plugin will append a `system` property to the provided `object`. If a `system` property already exists, the property `value` will be overwritten.
 
 
 
